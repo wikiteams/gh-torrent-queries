@@ -69,4 +69,5 @@ head(network_matrix)
 g = graph.edgelist(network_matrix[,1:2],directed=FALSE)
 E(g)$weight=as.numeric(network_matrix[,3])
 
-plot(g,layout=layout.fruchterman.reingold,edge.width=E(g)$weight)
+# plot(g,layout=layout.fruchterman.reingold,edge.width=E(g)$weight)
+# plotting in a reasonable time (less than 24h) is unreal, reduce first
